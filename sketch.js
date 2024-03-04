@@ -13,7 +13,7 @@ function draw() {
   background(0);
   translate(width / 2, height / 2);
 
-  let amplitude = width / 10;
+  let amplitude = width / 5;
 
   for (let i = 0; i < numLines; i++) {
     let x1 = sin((t + i) / 10) * amplitude;
