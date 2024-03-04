@@ -23,9 +23,17 @@ function draw() {
     let y2 = cos((-t + i) / 10) * (amplitude * 2);
 
     line(x1, y1, x2, y2);
+    push();
+    translate(width / 2, height / 2 - height / 2);
+    line(x1, y1, x2/2, y2/2);
+    pop();
+    push();
+    translate(width / 2 - width, height / 2 - height / 2);
+    line(x1, y1, x2/2, y2/2);
+    pop();
   }
 
-  t += 0.1;
+  t += 0.05;
 }
 
 function windowResized() {
